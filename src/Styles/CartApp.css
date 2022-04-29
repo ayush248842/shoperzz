@@ -1,0 +1,38 @@
+*:focus{
+    outline: none;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+#app-root{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    height: auto;
+    width: 40%;
+    min-height: 400px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3%;
+    padding-bottom: 1;
+    border-radius: 10px;
+    background-color: rgb(242, 242, 242);
+}
